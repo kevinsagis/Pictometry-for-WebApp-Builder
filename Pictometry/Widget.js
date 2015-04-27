@@ -5,8 +5,8 @@ define(['dojo/_base/declare',
 ],
 function(declare, BaseWidget, map) {
   var clazz = declare([BaseWidget], {
-      templateString: '<div> <br /> <br />Click the Pictometry Clicker button to activate the Pictometry tool. The Pictometry Viewer will open in a new window and display Pictometry imagery. Popups must be enabled.  <br /> <br /> <br /> ' +
-    '<input type="button" class="jimu-btn" id="btnPict" value="Pictometry Clicker" data-dojo-attach-event="click:_pictometryClick">. <br /> <br /> <br /></div> ',
+      templateString: '<div> <br /> <br />1. Click the Pictometry button to activate. <br /> 2. Click on the map, and Pictometry Viewer will display imagery for this location in a new window.  <br /> <br /> <br /> ' +
+    '<input type="button" class="jimu-btn" id="btnPict" value="Pictometry Clicker" data-dojo-attach-event="click:_pictometryClick"> <br /> <br /> <br /></div> ',
 
     _pictometryClick: function () {
         map = this.map;
@@ -51,3 +51,4 @@ handlerPictometry = map.on("click", function (evt) {
   clazz.hasConfig = false;
   return clazz;
 });
+
