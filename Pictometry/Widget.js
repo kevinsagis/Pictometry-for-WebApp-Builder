@@ -52,3 +52,4 @@ handlerPictometry = map.on("click", function (evt) {
   clazz.hasLocale = false;
   clazz.hasConfig = false;
   return clazz;
+});
