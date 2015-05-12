@@ -22,7 +22,9 @@ map.setMapCursor("crosshair");
 handlerPictometry = map.on("click", function (evt) {
 
                             var pt = esri.geometry.webMercatorToGeographic(evt.mapPoint);
-                            var url = 'http://INSERT_YOUR_SITE_URL/php/ipa.php?' + 'lat=' + pt.y + '&lon=' + pt.x;
+                                         var url = 'http://INSERT_YOUR_SITE_URL/php/ipa.php?' + 'lat=' + pt.y + '&lon=' + pt.x;
+                
+                //if you are using internal EFS Viewer  use this line..//   // var url = 'https:/INSERT_YOUR_SITE_URL//efs/default.php?' + 'lat=' + pt.y + '&lon=' + pt.x + '&inSR=YOUR_SPATIAL_REFERENCE_NUMBER&outSR=4326&' + 'user=YOURUSERNAME&pass=YOUR_TOKEN';
 
 
                             window.open(url);
