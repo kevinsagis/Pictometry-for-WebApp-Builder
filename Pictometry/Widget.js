@@ -42,7 +42,6 @@ function (declare, BaseWidget, ToggleButton, dom, registry, Button, on, aspect, 
                     var pt = esri.geometry.webMercatorToGeographic(evt.mapPoint);
                     var url = pictometryCloudURL + 'lat=' + pt.y + '&lon=' + pt.x;
 
-                    alert(url);
                     window.open(url);
 
                     ///// remove after one click
