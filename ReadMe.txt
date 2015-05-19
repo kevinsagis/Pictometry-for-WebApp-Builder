@@ -28,6 +28,11 @@ And remember, this Host URL must match what you gave to Pictometry.  Each time t
 Instructions for EFS Internval Viewer:
 
 note: while below mentions mySQL we use SQL Server 2012 and it works fine. 
+The standard URL path for Internal EFS Viewer is the following:
+
+pt = map.project(pt.x, pt.y, map.spatialReference.wkid, 4326);
+var url = 'https://Your.Internal.Machine/efs/default.php?'+ 'lat=' + pt.y + '&lon=' + pt.x + '&inSR=2239&outSR=4326&' + 'user=USERNAME%40COMPANYNAME.com&pass=INSERT_TOKEN'  ;
+///note: the 2239 is our wkid in Georgia, insert your own if your map uses your local wkid projection
 
 
 Implementing a Pictometry Server Edition link with Embedded Credentials (provided by Pictometry, reposted with permission)
