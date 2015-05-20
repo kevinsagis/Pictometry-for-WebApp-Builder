@@ -1,6 +1,6 @@
-Pictometry Widget 1.0
+Pictometry Widget 1.1
 
-April 2015
+May 18, 2015
 
 How to Install
 
