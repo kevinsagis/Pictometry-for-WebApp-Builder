@@ -77,6 +77,5 @@ https://serverURL/efs/default.php?user=abc%40xyz.com&pass=5f4dcc3b5aa765d61d8327
 
 
 by Kevin MacLeod
-May 12, 2015
 
 Disclaimer: all code and instructions provided with no warranty or guarantee of any kind express or implied. For Pictometry product support, contact Pictometry.
