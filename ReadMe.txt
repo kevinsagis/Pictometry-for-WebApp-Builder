@@ -11,7 +11,10 @@ Or simply copy this folder 'Pictometry' into \arcgis-web-appbuilder-1.1\client\s
 
 3. Install PHP.  Both viewers require it.
 
-In the next version I will be adding User Configuration so you can just type in the credentials and URL in the Widget config inside WebApp Builder, instead of editing the file manually. 
+4. Add the widget to your WebApp Builder app.  In the textbox where it asks you to enter your server URL, enter it. 
+If you are using the Pictometry Connect Online IPA and placed your php file named 'ipa.php' in a folder called 'php' (details below) then enter your site address. For example, you would enter:    http://www.yourcompany.com/php/ipa.php?   
+That's it. It appends the lat/long from your cursor click, and opens a new window with Pictometry centered on this lat/long. 
+Details for embedding credentials are below:
 
 ----------------------------------
 Instructions for IPA / Pictometry Connect Online:
