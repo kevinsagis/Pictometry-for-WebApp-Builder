@@ -1,6 +1,10 @@
-Pictometry Widget 1.1
+Pictometry Widget 1.2
 
-May 18, 2015
+July 9, 2015
+
+v 1.2 - What's New: 
+This widget can now be used for sites in any map projection (i.e. state plane, web mercator, etc)
+
 
 How to Install
 
