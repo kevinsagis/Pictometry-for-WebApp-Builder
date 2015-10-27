@@ -23,20 +23,18 @@ function (declare, BaseWidget, ToggleButton, dom, registry, Button, on, aspect, 
 
 
 {
-        templateString: '<div> <br /> <br />1. Click the Pictometry button to activate. <br /> 2. Click on the map, and Pictometry Viewer will display imagery for this location in a new window.  <br /> <br /> <br /> ' +
-      '<input type="button" class="jimu-btn" id="btnPict" value="Pictometry Clicker" data-dojo-attach-event="click:_pictometryClick"> <br /> <br /> <br /></div> ',
-     
- baseClass: 'jimu-widget-pictometry',
- name: 'Pictometry',
- pt: '',
+      templateString: '<div> <br /> <br />Click the "Select" Pictometry button to activate, then click on a point of interest on the map to display Pictometry imagery for this location in a new window.  <br /> <br /> <br /> ' +
+            '<input type="button" style="background-color: rgb(125,125,125)!important; background: url(./widgets/Pictometry/images/icon.png) no-repeat;"  class="jimu-btn" id="btnPict" value=" &nbsp;&nbsp;&nbsp; Select" data-dojo-attach-event="click:_pictometryClick"> <br /> <br /> <br /></div> ',
 
-        _pictometryClick: function () {
+      //handlerPictometry: '',
+
+            _pictometryClick: function () {
 
             pictometryCloudURL = this.config.configText;
             map = this.map;
 //         esri geometry service
             var EsrigeometryService = new GeometryService("http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer");
-            // !!!!!!!! I recommend you set up your own geometry service and server !!!!!! //////
+            // I recommend you set up your own geometry service and server //////
 
 
             //handlers 
