@@ -1,6 +1,11 @@
 Pictometry Widget 1.2
 
+April 2019 update:  NOTE::: if you are on https, make sure ALL links use https or Pictometry won't load!  Otherwise this still works fine, and is tested in Web App Builder 2.12 (April 2019 release).  Working demo now on https://www.sagis.org/map
+
+
 July 9, 2015
+
+
 
 v 1.2 - What's New: 
 This widget can now be used for sites in any map projection (i.e. state plane, web mercator, etc)
@@ -48,7 +53,7 @@ As designed, it is necessary for all users of the Server Edition POL Web Solutio
 
 A work-around to enable simplified access is to create a link to the Server Edition application with the login ID and password embedded, allowing the user to simply click on the link. The URL will contain both the path to the Server Edition application, the user ID, and the password in an encrypted format.
 
-This process can be used for both one user and multiple users using an account that allows concurrent login’s1. It would be challenging to maintain such links for individual users due to the need to enter the back-end database to obtain the encrypted user password, particularly if there is a mandate to change passwords periodically.
+This process can be used for both one user and multiple users using an account that allows concurrent loginâ€™s1. It would be challenging to maintain such links for individual users due to the need to enter the back-end database to obtain the encrypted user password, particularly if there is a mandate to change passwords periodically.
 
 The instructions presume the use of MySQL Server 5.1 as the back-end database for Server Edition. If your implementation utilizes another database server (Oracle 11g, MS SQL Server 2008), the principles are similar but the location of certain tools and commands may be different; it may be necessary to consult with your database administrator to obtain the required information.
 
@@ -56,25 +61,25 @@ In order to implement a link with embedded credentials, please do the following;
 
 Identify the Encrypted Credentials
 
-•	Open and log in to the MySQL Administration application on the server using the credentials established during the installation
-o	Click on ‘Tools’-> ‘MySQL Query Browser’ 
-o	From the Schemata pane on the right, expand the ‘pol_user’ schema
-o	Locate the ‘users’ table, click it four times with the left mouse button to expand it to view the current properties of all users 
-o	Locate the ‘user_email’ field, and scroll down to the user name of interest- 
-?	Look to the field ‘user_password’ to the immediate right to identify the encrypted password- 
-?	Click ‘Edit’ at the bottom of the screen, then highlight-and copy that encrypted password for later use. It will be a long hexadecimal string such as:  ‘5f4dcc3b5aa765d61d8327deb882cf99’ 
+â€¢	Open and log in to the MySQL Administration application on the server using the credentials established during the installation
+o	Click on â€˜Toolsâ€™-> â€˜MySQL Query Browserâ€™ 
+o	From the Schemata pane on the right, expand the â€˜pol_userâ€™ schema
+o	Locate the â€˜usersâ€™ table, click it four times with the left mouse button to expand it to view the current properties of all users 
+o	Locate the â€˜user_emailâ€™ field, and scroll down to the user name of interest- 
+?	Look to the field â€˜user_passwordâ€™ to the immediate right to identify the encrypted password- 
+?	Click â€˜Editâ€™ at the bottom of the screen, then highlight-and copy that encrypted password for later use. It will be a long hexadecimal string such as:  â€˜5f4dcc3b5aa765d61d8327deb882cf99â€™ 
 
 Create the Link with Embedded Credentials
 
-•	Create a new web shortcut
-•	In the location field, enter the following; 
+â€¢	Create a new web shortcut
+â€¢	In the location field, enter the following; 
 https://serverURL/efs/default.php?user=abc%40xyz.com&pass=5f4dcc3b5aa765d61d8327deb882cf992
-•	Test the link by opening it- it should open without the need for user intervention 
-•	You can then use that URL as a free-standing link or use it in other applications or other web pages to bring up the Server Edition application
+â€¢	Test the link by opening it- it should open without the need for user intervention 
+â€¢	You can then use that URL as a free-standing link or use it in other applications or other web pages to bring up the Server Edition application
 
 1 Please see your Server Edition Administrative Training material for information on how to create an account that allows concurrent logins, and limitations of those accounts.
 
-2 ‘ServerURL/efs’ would be replaced with the URL to access the Server Edition application in your environment, ‘user=’ needs to be populated with the e-mail formatted user ID of the designated user(s), and ‘pass’ would be populated with the encrypted password for that account derived from the database.
+2 â€˜ServerURL/efsâ€™ would be replaced with the URL to access the Server Edition application in your environment, â€˜user=â€™ needs to be populated with the e-mail formatted user ID of the designated user(s), and â€˜passâ€™ would be populated with the encrypted password for that account derived from the database.
 
 
 
