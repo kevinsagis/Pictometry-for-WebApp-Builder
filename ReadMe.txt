@@ -1,5 +1,7 @@
 Pictometry Widget 1.2
 
+2022: this still works great. Examples sites are Savannah, GA (www.sagis.org/map ) and Columbia, SC ( https://gis.columbiasc.gov/cocinfo ).   The first step you will need, is to contact your local EagleView Pictometry technical manager to obtain a key, which you will place in the file here to enable imagery access for your county.
+
 April 2019 update:  NOTE::: if you are on https, make sure ALL links use https or Pictometry won't load!  Otherwise this still works fine, and is tested in Web App Builder 2.12 (April 2019 release).  Working demo now on https://www.sagis.org/map
 
 
